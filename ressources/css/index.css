@@ -1,0 +1,230 @@
+html {
+    font-family: "Roboto", "arial";
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+    border-bottom: solid 1px rgb(6, 57, 100);
+}
+
+header .content {
+    display: flex;
+    flex: 1;
+    padding: 1.875rem;
+}
+
+header .logo {
+    flex: 1;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav li {
+    text-transform: uppercase;
+    padding-left: 3.5rem;
+    padding-right: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(6, 57, 100);
+    font-weight: bold;
+    transition: 1s;
+    height: 3rem;
+    font-size: 1.5rem;
+}
+
+nav a:hover {
+    background-color: rgb(6, 57, 100);
+    color: white;
+}
+
+
+header .mobile {
+    display: none;
+}
+
+
+/*main content*/
+
+.main-content {
+    position: relative;
+}
+
+.banner {
+    display: flex;
+    background: url("img/beach.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 43.5rem;
+    align-items: center;
+}
+
+#wpconclu {
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+    background-color: rgba(237, 243, 242, 0.5);
+}
+
+#wpheader {
+    width: 100%;
+    height: 14rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+}
+
+h1 {
+    text-shadow: 2px 0 0 rgb(6, 57, 100), 2px 2px 0 rgb(6, 57, 100), 0 2px 0 rgb(6, 57, 100), -2px 2px 0 rgb(6, 57, 100), -2px 0 0 rgb(6, 57, 100), -2px -2px 0 rgb(6, 57, 100), 0 -2px 0 rgb(6, 57, 100), 2px -2px 0 rgb(6, 57, 100);
+    text-align: center;
+    font-weight: bold;
+    font-size: 5rem;
+    padding: 2rem 0 2rem 0;
+    color: rgb(250, 250, 250);
+    background-color: rgba(237, 243, 242, 0.5);
+    
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 3rem 1rem 1rem 1rem;
+    color: rgb(6, 57, 100);
+}
+
+h3 {
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.box2 h3,
+.box3 h3 {
+    color: rgb(6, 57, 100);
+}
+
+.Services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 3rem;
+    width: auto;
+    height: 30rem;
+    justify-content: center;
+    background-color: rgb(6, 57, 100);
+}
+
+.box1 {
+    background: url("img/webdev.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    display: flex;
+    border: solid 1px white;
+    align-items: center;
+}
+
+.box2 {
+    background: url("img/e-commerce.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    display: flex;
+    border: solid 1px white;
+    align-items: center;
+}
+
+.box3 {
+    background: url("img/webapp.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    display: flex;
+    border: solid 1px white;
+    align-items: center;
+}
+
+.box4 {
+    background: url("img/wordpress.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    display: flex;
+    border: solid 1px white;
+    align-items: center;
+}
+
+.img-cont {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.img-cont h3 {
+    margin-left: 3rem;
+}
+
+.arg {
+    margin: 2rem 0 2rem 0;
+}
+
+p {
+    line-height: 1.5;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+span {
+    font-style: oblique;
+    font-size: 1rem;
+}
+
+/*about me*/
+
+.aboutme {
+    border: solid 2px rgb(6, 57, 100);
+}
+
+.aboutmetext {
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.aboutmetext img {
+    width: 20rem;
+    height: auto;
+    padding: 3rem;
+    display: block
+}   
+
+.aboutmetext p {
+    width: 60rem;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: rgb(65, 53, 37);
+    color: white;
+    height: 300px;
+    font-size: 1rem;
+}
