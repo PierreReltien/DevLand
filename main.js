@@ -21,7 +21,7 @@ const modifBoxOff = function (event) {
 //association entre les évènements, les fonctions event handler et chacune des boxes
 hoveredBoxes.forEach(function (hoveredBox) {
     hoveredBox.addEventListener("mouseover", modifBoxOn,true);   
-    hoveredBox.addEventListener("mouseleave", modifBoxOff),true;
+    hoveredBox.addEventListener("mouseleave", modifBoxOff,true);
 })
 
 
