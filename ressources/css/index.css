@@ -94,7 +94,7 @@ h1 {
     padding: 2rem 0 2rem 0;
     color: rgb(250, 250, 250);
     background-color: rgba(237, 243, 242, 0.5);
-    
+
 }
 
 h2 {
@@ -111,14 +111,14 @@ h3 {
     font-size: 2.5rem;
 }
 
-.box2 h3,
-.box3 h3 {
+#box2 h3,
+#box3 h3 {
     color: rgb(6, 57, 100);
 }
 
 .Services {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     padding: 3rem;
     width: auto;
     height: 30rem;
@@ -126,48 +126,40 @@ h3 {
     background-color: rgb(6, 57, 100);
 }
 
-.box1 {
+.box {
+    max-width: 100%;
+    display: flex;
+    border: solid 1px white;
+    align-items: center;    
+    cursor: pointer;
+}
+
+#box1 {
     background: url("img/webdev.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 100%;
-    display: flex;
-    border: solid 1px white;
-    align-items: center;
 }
 
-.box2 {
+#box2 {
     background: url("img/e-commerce.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 100%;
-    display: flex;
-    border: solid 1px white;
-    align-items: center;
 }
 
-.box3 {
+#box3 {
     background: url("img/webapp.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 100%;
-    display: flex;
-    border: solid 1px white;
-    align-items: center;
 }
 
-.box4 {
+#box4 {
     background: url("img/wordpress.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    display: flex;
-    border: solid 1px white;
-    align-items: center;
+    background-repeat: no-repeat;    
 }
 
 .img-cont {
@@ -209,11 +201,11 @@ span {
 }
 
 .aboutmetext img {
-    width: 20rem;
+    width: 25rem;
     height: auto;
     padding: 3rem;
     display: block
-}   
+}
 
 .aboutmetext p {
     width: 60rem;
