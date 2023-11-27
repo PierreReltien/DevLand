@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ressources/css/reset.css">
+    <link href="ressources\css\index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Space+Mono&display=swap"
+        rel="stylesheet">
+
+    <title>Contact Form</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="content">
+            <a href="index.html" class="desktop logo">DevLand<span>, Unlock your potential </span></a>
+            <nav class="desktop">
+                <ul>
+                    <li><a href="index.html">Welcome page</a></li>
+                    <li><a href="index.html#Services-section">Services</a></li>
+                    <li><a href="index.html#aboutme">About me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <nav class="mobile">
+                <ul>
+                    <li><a href="#"><img src="./resources/images/ic-logo.svg"></a></li>
+                    <li><a href="#"><img src="./resources/images/ic-product-detail.svg"></a></li>
+                    <li><a href="#"><img src="./resources/images/ic-about-us.svg"></a></li>
+                    <li><a href="#" class="button">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+
+<h2>Contact Us</h2>
+
+<form action="/your-processing-script" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+
+    <input type="submit" value="Send">
+</form>
+
+</body>
+</html>

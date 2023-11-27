@@ -24,6 +24,8 @@ hoveredBoxes.forEach(function (hoveredBox) {
     hoveredBox.addEventListener("mouseleave", modifBoxOff,true);
 })
 
+document.createElement  
+
 
 /* alternative au forEach : for (let i = 0; i< hoveredBoxes.length; i++ ) { 
 hoveredBoxes[i].addEventListener("mouseover", modifBoxOn);
