@@ -20,14 +20,27 @@ const modifBoxOff = function (event) {
 
 //association entre les évènements, les fonctions event handler et chacune des boxes
 hoveredBoxes.forEach(function (hoveredBox) {
-    hoveredBox.addEventListener("mouseover", modifBoxOn,true);   
-    hoveredBox.addEventListener("mouseleave", modifBoxOff,true);
+    hoveredBox.addEventListener("mouseover", modifBoxOn, true);
+    hoveredBox.addEventListener("mouseleave", modifBoxOff, true);
 })
-
-document.createElement  
 
 
 /* alternative au forEach : for (let i = 0; i< hoveredBoxes.length; i++ ) { 
 hoveredBoxes[i].addEventListener("mouseover", modifBoxOn);
 hoveredBoxes[i].addEventListener("mouseleave", modifBoxOff);
 }*/
+
+const slide = ["ressources/css/img/aurora-banner.webp", "ressources/css/img/beach-banner.webp", "ressources/css/img/earth-banner.webp", "ressources/css/img/polynesia-banner.webp"];
+let numero = 0;
+
+function changeSlide(sens) {
+    numero = numero + sens;
+    if (numero < 0) {
+        numero = slide.length - 1;
+    }
+    if (numero > slide.length - 1) {
+        numero = 0;
+    }
+    document.getElementById("slide").src = slide[numero];
+}
+setInterval("changeSlide(1)", 4000);
